@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Women - RainyDays</title>
-    <meta name="description" content="Have a look at our clothes for women." />
+    <title>Product - RainyDays</title>
+    <meta
+      name="description"
+      content="A waterproof jacket, designed to keep the wind out during both low and high speed travelling."
+    />
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
-    <link href="../css/style.css?v=1" rel="stylesheet" />
-    <script src="../js/women-products.js" type="module"></script>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="../js/single-product.js" type="module"></script>
     <script src="https://kit.fontawesome.com/2f7002576b.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -26,10 +29,10 @@
               <a class="nav-link" href="../">Home</a>
             </li>
             <li>
-              <a class="nav-link active" href="../women/">Women</a>
+              <a id="menu-women" class="nav-link" href="../women/">Women</a>
             </li>
             <li>
-              <a class="nav-link" href="../men/">Men</a>
+              <a id="menu-men" class="nav-link" href="../men/">Men</a>
             </li>
             <li>
               <a class="nav-link" href="../contact/">Contact</a>
@@ -45,23 +48,40 @@
             <span class="cart-count">2</span>
           </div>
         </a>
-        <label for="menu-checkbox" class="navigation-toggler">
-          <i class="fa fa-bars"></i>
-          <span class="hidden">Menu</span>
-        </label>
+        <label for="menu-checkbox" class="navigation-toggler"
+          ><i class="fa fa-bars"></i><span class="hidden">Menu</span></label
+        >
       </nav>
     </header>
     <main>
       <nav id="breadcrumbs" class="breadcrumbs-container">
-        <a href="../">Home</a> / <a href="../women/">Women</a>
+        <a href="../">Home</a> / <a id="gender-breadcrumb" href="#"></a> /
+        <span id="product-breadcrumb"></span>
       </nav>
-      <section id="products" class="products-section">
-        <h1 class="page-title">Women's jackets</h1>
-        <div class="loading">
-          <i class="fa fa-spinner fa-spin"></i><br />
-          Loading products...
+      <div class="loading">
+        <i class="fa fa-spinner fa-spin"></i><br />
+        Loading product...
+      </div>
+      <section id="product" class="hidden">
+        <div class="product-image">
+          <img id="product-image" src="" alt="" />
         </div>
-        <div class="product-grid"></div>
+        <div class="product-details">
+          <div class="product-header">
+            <h1 id="product-title" class="product-title"></h1>
+            <span id="product-price" class="product-label"></span>
+          </div>
+          <div class="product-description">
+            <p id="product-description"></p>
+          </div>
+          <div class="product-sizes">
+            <span class="product-label">Choose size</span>
+            <div id="product-size-selector" class="product-size-selector"></div>
+          </div>
+          <div class="product-button">
+            <a href="../checkout/" class="full-btn">Add to cart</a>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

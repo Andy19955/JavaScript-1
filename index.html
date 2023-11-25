@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pushing the comfort zone - RainyDays</title>
-    <meta name="description" content="Rainy Days has been making and selling quality jackets since we started back in 2007. Our jackets are made from sustainable and high quality materials, which is what makes them so unique.">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link href="css/style.css" rel="stylesheet">
+    <meta
+      name="description"
+      content="Rainy Days has been making and selling quality jackets since we started back in 2007. Our jackets are made from sustainable and high quality materials, which is what makes them so unique."
+    />
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="./js/new-products.js" type="module"></script>
     <script src="https://kit.fontawesome.com/2f7002576b.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -15,10 +19,10 @@
       <nav class="navbar">
         <div class="branding">
           <a href="../" title="RainyDays">
-            <img class="logo" src="images/logo.png" alt="RainyDays logo">
+            <img class="logo" src="images/logo.png" alt="RainyDays logo" />
           </a>
         </div>
-        <input type="checkbox" id="menu-checkbox">
+        <input type="checkbox" id="menu-checkbox" />
         <div class="navigation-collapse" id="navigationCollapse">
           <ul class="navigation-elements">
             <li>
@@ -42,54 +46,28 @@
           <div class="cart-icon">
             <i class="fa fa-cart-shopping"></i>
             <span class="cart-count">2</span>
-            </div>
+          </div>
         </a>
-        <label for="menu-checkbox" class="navigation-toggler"><i class="fa fa-bars"></i><span class="hidden">Menu</span></label>
+        <label for="menu-checkbox" class="navigation-toggler"
+          ><i class="fa fa-bars"></i><span class="hidden">Menu</span></label
+        >
       </nav>
     </header>
     <main>
       <section id="hero" class="hero">
-        <h1 class="hero-title">
-          Pushing the Comfort Zone
-        </h1>
+        <h1 class="hero-title">Pushing the Comfort Zone</h1>
         <div class="hero-buttons">
           <a href="women/" class="main-btn">Women</a>
           <a href="women/" class="main-btn">Men</a>
         </div>
       </section>
       <section id="new-releases">
-        <h2 class="section-title">
-          New releases
-        </h2>
-        <div class="product-list">
-          <a href="jacket1/" title="Jacket 1">
-            <div class="product-card">
-              <div class="product-img">
-                <img src="images/jacket1-small.jpg" alt="Jacket 1">
-              </div>
-              <span class="product-name">Jacket 1</span>
-              <span class="product-price">$ 109</span>
-            </div>
-          </a>
-          <a href="jacket1/" title="Jacket 2">
-            <div class="product-card">
-              <div class="product-img">
-                <img src="images/jacket2-small.jpg" alt="Jacket 2">
-              </div>
-              <span class="product-name">Jacket 2</span>
-              <span class="product-price">$ 99</span>
-            </div>
-          </a>
-          <a href="jacket1/" title="Jacket 3">
-            <div class="product-card">
-              <div class="product-img">
-                <img src="images/jacket3-small.jpg" alt="Jacket 3">
-              </div>
-              <span class="product-name">Jacket 3</span>
-              <span class="product-price">$ 79</span>
-            </div>
-          </a>
+        <h2 class="section-title">New releases</h2>
+        <div class="loading">
+          <i class="fa fa-spinner fa-spin"></i><br />
+          Loading products...
         </div>
+        <div class="product-grid"></div>
       </section>
     </main>
     <footer>

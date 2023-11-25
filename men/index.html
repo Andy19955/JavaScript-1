@@ -1,134 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Men - RainyDays</title>
-        <meta name="description" content="Have a look at our clothes for men.">
-        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-        <link href="../css/style.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/2f7002576b.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <div class="branding">
-                    <a href="../" title="RainyDays">
-                        <img class="logo" src="../images/logo.png" alt="RainyDays logo">
-                    </a>
-                </div>
-                <input type="checkbox" id="menu-checkbox">
-                <div class="navigation-collapse" id="navigationCollapse">
-                    <ul class="navigation-elements">
-                        <li>
-                            <a class="nav-link" href="../">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="../women/">Women</a>
-                        </li>
-                        <li>
-                            <a class="nav-link active" href="../men/">Men</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="../contact/">Contact</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="../about/">About</a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="../checkout/" class="nav-cart" title="Go to cart">
-                    <div class="cart-icon">
-                        <i class="fa fa-cart-shopping"></i>
-                        <span class="cart-count">2</span>
-                    </div>
-                </a>
-                <label for="menu-checkbox" class="navigation-toggler"><i class="fa fa-bars"></i><span class="hidden">Menu</span></label>
-            </nav>
-        </header>
-        <main>
-            <nav id="breadcrumbs" class="breadcrumbs-container">
-                <a href="../">Home</a> / <a href="../men/">Men</a>
-            </nav>
-            <section id="products" class="products-section">
-                <h1 class="page-title">
-                    Men's jackets
-                </h1>
-                <div class="product-grid">
-                    <a href="../jacket1/" class="product" title="Jacket 1">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="../images/jacket1-small.jpg" alt="Jacket 1">
-                            </div>
-                            <span class="product-name">Jacket 1</span>
-                            <span class="product-price">$ 109</span>
-                        </div>
-                    </a>
-                    <a href="../jacket1/" class="product" title="Jacket 2">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="../images/jacket2-small.jpg" alt="Jacket 2">
-                            </div>
-                            <span class="product-name">Jacket 2</span>
-                            <span class="product-price">$ 99</span>
-                        </div>
-                    </a>
-                    <a href="../jacket1/" class="product" title="Jacket 3">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="../images/jacket3-small.jpg" alt="Jacket 3">
-                            </div>
-                            <span class="product-name">Jacket 3</span>
-                            <span class="product-price">$ 79</span>
-                        </div>
-                    </a>
-                    <a href="../jacket1/" class="product" title="Jacket 4">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="../images/jacket4-small.jpg" alt="Jacket 4">
-                            </div>
-                            <span class="product-name">Jacket 4</span>
-                            <span class="product-price">$ 85</span>
-                        </div>
-                    </a>
-                    <a href="../jacket1/" class="product" title="Jacket 5">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="../images/jacket5-small.jpg" alt="Jacket 5">
-                            </div>
-                            <span class="product-name">Jacket 5</span>
-                            <span class="product-price">$ 149</span>
-                        </div>
-                    </a>
-                    <a href="../jacket1/" class="product" title="Jacket 6">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="../images/jacket6-small.jpg" alt="Jacket 6">
-                            </div>
-                            <span class="product-name">Jacket 6</span>
-                            <span class="product-price">$ 109</span>
-                        </div>
-                    </a>
-                    <a href="../jacket1/" class="product" title="Jacket 7">
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="../images/jacket7-small.jpg" alt="Jacket 7">
-                            </div>
-                            <span class="product-name">Jacket 7</span>
-                            <span class="product-price">$ 99</span>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-container">
-                <span class="copyright">&copy; 2023 RainyDays</span>
-                <span class="footer-decoration">|</span>
-                <a href="../about/" class="footer-link">About</a>
-                <a href="../contact/" class="footer-link">Contact</a>
-            </div>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men - RainyDays</title>
+    <meta name="description" content="Have a look at our clothes for men." />
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="../js/men-products.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/2f7002576b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="branding">
+          <a href="../" title="RainyDays">
+            <img class="logo" src="../images/logo.png" alt="RainyDays logo" />
+          </a>
+        </div>
+        <input type="checkbox" id="menu-checkbox" />
+        <div class="navigation-collapse" id="navigationCollapse">
+          <ul class="navigation-elements">
+            <li>
+              <a class="nav-link" href="../">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="../women/">Women</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="../men/">Men</a>
+            </li>
+            <li>
+              <a class="nav-link" href="../contact/">Contact</a>
+            </li>
+            <li>
+              <a class="nav-link" href="../about/">About</a>
+            </li>
+          </ul>
+        </div>
+        <a href="../checkout/" class="nav-cart" title="Go to cart">
+          <div class="cart-icon">
+            <i class="fa fa-cart-shopping"></i>
+            <span class="cart-count">2</span>
+          </div>
+        </a>
+        <label for="menu-checkbox" class="navigation-toggler"
+          ><i class="fa fa-bars"></i><span class="hidden">Menu</span></label
+        >
+      </nav>
+    </header>
+    <main>
+      <nav id="breadcrumbs" class="breadcrumbs-container">
+        <a href="../">Home</a> / <a href="../men/">Men</a>
+      </nav>
+      <section id="products" class="products-section">
+        <h1 class="page-title">Men's jackets</h1>
+        <div class="loading">
+          <i class="fa fa-spinner fa-spin"></i><br />
+          Loading products...
+        </div>
+        <div class="product-grid"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <span class="copyright">&copy; 2023 RainyDays</span>
+        <span class="footer-decoration">|</span>
+        <a href="../about/" class="footer-link">About</a>
+        <a href="../contact/" class="footer-link">Contact</a>
+      </div>
+    </footer>
+  </body>
 </html>
