@@ -1,6 +1,5 @@
 import { handleNewProductsDisplay } from "./handlers/handleNewProductsDisplay.js";
-import { handleWomenProductsDisplay } from "./handlers/handleWomenProductsDisplay.js";
-import { handleMenProductsDisplay } from "./handlers/handleMenProductsDisplay.js";
+import { handleProductsDisplay } from "./handlers/handleProductsDisplay.js";
 import { handleSingleProductDisplay } from "./handlers/handleSingleProductDisplay.js";
 
 function router() {
@@ -12,10 +11,10 @@ function router() {
       handleNewProductsDisplay();
       break;
     case "/women/":
-      handleWomenProductsDisplay();
+      handleProductsDisplay("female");
       break;
     case "/men/":
-      handleMenProductsDisplay();
+      handleProductsDisplay("male");
       break;
     case "/product/":
       handleSingleProductDisplay();

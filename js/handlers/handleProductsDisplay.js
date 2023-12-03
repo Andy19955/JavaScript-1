@@ -1,12 +1,12 @@
 import { fetchProducts } from "../api/fetchProducts.js";
-import { displayMenProducts } from "../ui/products/displayMenProducts.js";
+import { displayProducts } from "../ui/products/displayProducts.js";
 import { displayMessage } from "../ui/shared/displayMessage.js";
 
-export async function handleMenProductsDisplay() {
+export async function handleProductsDisplay(gender) {
   const loading = document.querySelector("#loading-products");
   try {
     const products = await fetchProducts();
-    displayMenProducts(products);
+    displayProducts(products, gender);
   } catch (error) {
     displayMessage("#message-container", error.message);
   }
