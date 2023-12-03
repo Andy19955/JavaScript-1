@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
     <link href="../css/style.css?v=1" rel="stylesheet" />
     <link rel="shortcut icon" type="image/icon" href="../images/favicon.ico" />
-    <script src="../js/women-products.js" type="module"></script>
+    <script src="../js/app.js" type="module"></script>
     <script src="https://kit.fontawesome.com/2f7002576b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="branding">
-          <a href="../" title="RainyDays">
+          <a href="/" title="RainyDays">
             <img class="logo" src="../images/logo.png" alt="RainyDays logo" />
           </a>
         </div>
@@ -24,7 +24,7 @@
         <div class="navigation-collapse" id="navigationCollapse">
           <ul class="navigation-elements">
             <li>
-              <a class="nav-link" href="../">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li>
               <a class="nav-link active" href="../women/">Women</a>
@@ -53,16 +53,15 @@
       </nav>
     </header>
     <main>
-      <nav id="breadcrumbs" class="breadcrumbs-container">
-        <a href="../">Home</a> / <a href="../women/">Women</a>
-      </nav>
+      <nav id="breadcrumbs" class="breadcrumbs-container"><a href="../">Home</a> / <a href="../women/">Women</a></nav>
       <section id="products" class="products-section">
         <h1 class="page-title">Women's jackets</h1>
-        <div class="loading">
+        <div id="loading-products" class="loading">
           <i class="fa fa-spinner fa-spin"></i><br />
           Loading products...
         </div>
-        <div class="product-grid"></div>
+        <div id="message-container"></div>
+        <div id="product-container" class="product-grid"></div>
       </section>
     </main>
     <footer>

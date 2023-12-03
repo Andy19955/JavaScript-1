@@ -49,6 +49,17 @@ p {
   font-size: 25px;
 }
 
+.message {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.error {
+  border: 1px solid red;
+  padding: 10px;
+  background-color: pink;
+}
+
 /* Header */
 .navbar {
   height: 97px;
@@ -122,8 +133,7 @@ img.logo {
 
 /* Hero */
 .hero {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/home-cover.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/home-cover.jpg");
   background-position: center;
   background-size: cover;
   height: 534px;
@@ -243,15 +253,13 @@ img.logo {
 }
 
 .about-page-cover {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/about-cover.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/about-cover.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .contact-page-cover {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/contact-cover.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/contact-cover.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -792,8 +800,7 @@ textarea.form-input {
   }
 
   .hero {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/home-cover-small.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/home-cover-small.jpg");
     background-position: center;
     background-size: cover;
     height: 194px;

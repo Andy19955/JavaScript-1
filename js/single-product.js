@@ -16,7 +16,7 @@ const productSizeSelector = document.querySelector("#product-size-selector");
 
 async function fetchProduct() {
   try {
-    const response = await fetch(url + "/" + productId);
+    const response = await fetch(`${url}/${productId}`);
     const product = await response.json();
 
     if (product.gender.toLowerCase() === "female") {
