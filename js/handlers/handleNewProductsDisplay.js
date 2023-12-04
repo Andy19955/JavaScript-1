@@ -9,6 +9,7 @@ export async function handleNewProductsDisplay() {
     displayNewProducts(products);
   } catch (error) {
     displayMessage("#message-container", error.message);
+  } finally {
+    loading.classList.add("hidden");
   }
-  loading.classList.add("hidden");
 }

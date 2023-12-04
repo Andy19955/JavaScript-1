@@ -16,6 +16,7 @@ export async function handleSingleProductDisplay() {
     displaySingleProduct(product);
   } catch (error) {
     displayMessage("#message-container", error.message);
+  } finally {
+    loading.classList.add("hidden");
   }
-  loading.classList.add("hidden");
 }
