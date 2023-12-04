@@ -7,9 +7,9 @@
     <title>Product - RainyDays</title>
     <meta name="description" content="A waterproof jacket, designed to keep the wind out during both low and high speed travelling." />
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
-    <link href="../css/style.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/icon" href="../images/favicon.ico" />
-    <script src="../js/app.js" type="module"></script>
+    <link href="/css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/icon" href="/images/favicon.ico" />
+    <script src="/js/app.js" type="module"></script>
     <script src="https://kit.fontawesome.com/2f7002576b.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -17,7 +17,7 @@
       <nav class="navbar">
         <div class="branding">
           <a href="/" title="RainyDays">
-            <img class="logo" src="../images/logo.png" alt="RainyDays logo" />
+            <img class="logo" src="/images/logo.png" alt="RainyDays logo" />
           </a>
         </div>
         <input type="checkbox" id="menu-checkbox" />
@@ -27,31 +27,37 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li>
-              <a id="menu-women" class="nav-link" href="../women/">Women</a>
+              <a id="menu-women" class="nav-link" href="/women/">Women</a>
             </li>
             <li>
-              <a id="menu-men" class="nav-link" href="../men/">Men</a>
+              <a id="menu-men" class="nav-link" href="/men/">Men</a>
             </li>
             <li>
-              <a class="nav-link" href="../contact/">Contact</a>
+              <a class="nav-link" href="/contact/">Contact</a>
             </li>
             <li>
-              <a class="nav-link" href="../about/">About</a>
+              <a class="nav-link" href="/about/">About</a>
             </li>
           </ul>
         </div>
-        <a href="../checkout/" class="nav-cart" title="Go to cart">
+        <a href="/checkout/" class="nav-cart" title="Go to cart">
           <div class="cart-icon">
             <i class="fa fa-cart-shopping"></i>
             <span class="cart-count">2</span>
           </div>
         </a>
-        <label for="menu-checkbox" class="navigation-toggler"><i class="fa fa-bars"></i><span class="hidden">Menu</span></label>
+        <label for="menu-checkbox" class="navigation-toggler">
+          <i class="fa fa-bars"></i>
+          <span class="hidden">Menu</span>
+        </label>
       </nav>
     </header>
     <main>
       <nav id="breadcrumbs" class="breadcrumbs-container">
-        <a href="/">Home</a> / <a id="gender-breadcrumb" href="#"></a> /
+        <a href="/">Home</a>
+        /
+        <a id="gender-breadcrumb" href="#"></a>
+        /
         <span id="product-breadcrumb"></span>
       </nav>
       <div id="loading-products" class="loading">
@@ -76,7 +82,7 @@
             <div id="product-size-selector" class="product-size-selector"></div>
           </div>
           <div class="product-button">
-            <a href="../checkout/" class="full-btn">Add to cart</a>
+            <a href="/checkout/" class="full-btn">Add to cart</a>
           </div>
         </div>
       </section>
@@ -85,8 +91,8 @@
       <div class="footer-container">
         <span class="copyright">&copy; 2023 RainyDays</span>
         <span class="footer-decoration">|</span>
-        <a href="../about/" class="footer-link">About</a>
-        <a href="../contact/" class="footer-link">Contact</a>
+        <a href="/about/" class="footer-link">About</a>
+        <a href="/contact/" class="footer-link">Contact</a>
       </div>
     </footer>
   </body>
