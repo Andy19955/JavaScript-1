@@ -9,6 +9,8 @@ export function displaySingleProduct(product) {
   const productDescription = document.querySelector("#product-description");
   const productSizeSelector = document.querySelector("#product-size-selector");
 
+  document.title = `${product.title} - RainyDays`;
+
   if (product.gender.toLowerCase() === "female") {
     const activeMenu = document.querySelector("#menu-women");
     activeMenu.classList.add("active");
