@@ -10,5 +10,5 @@ export async function fetchSingleProduct(id) {
     return results;
   }
 
-  throw new Error(`There was an error fetching the product with it: ${id}`);
+  throw new Error(`There was an error fetching the product with id: ${id}`);
 }
